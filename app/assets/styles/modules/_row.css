@@ -7,6 +7,14 @@
     &-large {
       margin-right: -100px;
     }
+
+    &-small {
+      margin-right: -45px;
+    }
+  }
+
+  &--t-padding {
+    padding-top: 80px;
   }
 
   &--gutters > div {
@@ -15,6 +23,10 @@
 
   &--gutters-large > div {
     padding-right: 100px;
+  }
+
+  &--gutters-small > div {
+    padding-right: 45px;
   }
 
   &__b-margin-until-medium {
@@ -47,6 +59,17 @@
       &--smaller {
         width: 63%;
       }
+    }
+  }
+
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }
